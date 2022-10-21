@@ -164,10 +164,6 @@ const logoURL = computed<string | null>(() => {
 	}
 
 	.container {
-		--border-radius: 6px;
-		--input-height: 60px;
-		--input-padding: 16px; /* (60 - 4 - 24) / 2 */
-
 		z-index: 2;
 		display: flex;
 		flex-shrink: 0;
@@ -188,8 +184,8 @@ const logoURL = computed<string | null>(() => {
 
 		:slotted(.type-title) {
 			font-weight: 800;
-			font-size: 42px;
-			line-height: 52px;
+			font-size: var(--font-size-massive);
+			line-height: var(--height-large);
 		}
 
 		.content {
@@ -253,7 +249,7 @@ const logoURL = computed<string | null>(() => {
 				font-size: 15px;
 				line-height: 24px;
 				background-color: rgb(38 50 56 / 0.2);
-				border-radius: 6px;
+				border-radius: var(--border-radius);
 				backdrop-filter: blur(2px);
 			}
 		}

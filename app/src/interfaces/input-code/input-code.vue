@@ -318,7 +318,7 @@ export default defineComponent({
 .input-code {
 	position: relative;
 	width: 100%;
-	font-size: 14px;
+	font-size: var(--font-size-small);
 }
 
 .small {

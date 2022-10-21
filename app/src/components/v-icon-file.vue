@@ -32,7 +32,7 @@ defineProps<Props>();
 		left: 50%;
 		transform: translateX(-50%);
 		top: 55%;
-		font-size: 12px;
+		font-size: var(--font-size-smaller);
 		font-weight: 800;
 		line-height: 1;
 		padding: 2px 0;

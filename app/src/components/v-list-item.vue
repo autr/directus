@@ -280,7 +280,7 @@ body {
 		}
 
 		&.dense {
-			height: 44px;
+			height: var(--height-medium);
 			padding: 4px 8px;
 
 			& + & {

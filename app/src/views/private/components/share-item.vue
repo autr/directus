@@ -112,7 +112,7 @@ export default defineComponent({
 
 .item-date {
 	color: var(--foreground-subdued);
-	font-size: 12px;
+	font-size: var(--font-size-smaller);
 }
 
 .item-header {
@@ -135,7 +135,7 @@ export default defineComponent({
 
 .share-uses {
 	margin-right: 5px;
-	font-size: 12px;
+	font-size: var(--font-size-smaller);
 
 	&.no-left {
 		color: var(--danger);
@@ -144,7 +144,7 @@ export default defineComponent({
 
 .share-status {
 	font-weight: 600;
-	font-size: 12px;
+	font-size: var(--font-size-smaller);
 	text-align: end;
 	text-transform: uppercase;
 
@@ -182,7 +182,7 @@ export default defineComponent({
 		right: 0;
 		display: flex;
 		align-items: center;
-		font-size: 12px;
+		font-size: var(--font-size-smaller);
 		white-space: nowrap;
 		text-align: right;
 		opacity: 1;

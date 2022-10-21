@@ -166,7 +166,7 @@ function useDelete() {
 			right: 0;
 			display: flex;
 			align-items: center;
-			font-size: 12px;
+			font-size: var(--font-size-smaller);
 			white-space: nowrap;
 			text-align: right;
 			text-transform: lowercase;

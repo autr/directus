@@ -120,8 +120,8 @@ export default defineComponent({
 
 .header-icon {
 	--v-button-background-color-disabled: var(--primary-10);
-	--v-button-color-disabled: var(--primary);
 	--v-button-background-color-hover-disabled: var(--primary-25);
+	--v-button-color-disabled: var(--primary);
 	--v-button-color-hover-disabled: var(--primary);
 }
 </style>

@@ -112,8 +112,8 @@ function updateTranslationStringsDialog(val: boolean) {
 <style lang="scss" scoped>
 .header-icon {
 	--v-button-background-color-disabled: var(--primary-10);
-	--v-button-color-disabled: var(--primary);
 	--v-button-background-color-hover-disabled: var(--primary-25);
+	--v-button-color-disabled: var(--primary);
 	--v-button-color-hover-disabled: var(--primary);
 }
 .translation-strings {
@@ -123,7 +123,7 @@ function updateTranslationStringsDialog(val: boolean) {
 }
 
 .search-input {
-	--input-height: 44px;
+	--input-height: var(--height-medium);
 
 	:deep(.input) {
 		border-radius: 22px !important;

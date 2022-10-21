@@ -86,7 +86,7 @@ body {
 
 .block-list-item-dense {
 	width: 100%;
-	height: 44px;
+	height: var(--height-medium);
 	border-radius: var(--border-radius);
 
 	@include loader;
@@ -99,7 +99,7 @@ body {
 .text {
 	flex-grow: 1;
 	height: 12px;
-	border-radius: 6px;
+	border-radius: var(--border-radius);
 
 	@include loader;
 }
@@ -123,7 +123,7 @@ body {
 	.text {
 		flex-grow: 1;
 		height: 12px;
-		border-radius: 6px;
+		border-radius: var(--border-radius);
 
 		@include loader;
 	}

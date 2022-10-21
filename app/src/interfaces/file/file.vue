@@ -325,7 +325,7 @@ function useURLImport() {
 .extension {
 	color: var(--primary);
 	font-weight: 600;
-	font-size: 11px;
+	font-size: var(--font-size-smallest);
 	text-transform: uppercase;
 }
 

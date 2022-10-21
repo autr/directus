@@ -578,7 +578,7 @@ export default defineComponent({
 
 	.card-title {
 		margin-bottom: 24px;
-		font-size: 24px;
+		font-size: var(--font-size-larger);
 	}
 }
 </style>

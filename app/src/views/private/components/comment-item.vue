@@ -177,7 +177,7 @@ function useEdits() {
 .comment-item .content :deep(:is(h1, h2, h3, h4, h5, h6)) {
 	margin-top: 12px;
 	font-weight: 600;
-	font-size: 16px;
+	font-size: var(--font-size-medium);
 	color: var(--foreground-normal-alt);
 }
 
@@ -212,7 +212,7 @@ function useEdits() {
 	padding: 4px 12px 5px;
 	color: var(--foreground-subdued);
 	font-weight: 600;
-	font-size: 12px;
+	font-size: var(--font-size-smaller);
 	background-color: var(--background-normal);
 	border-radius: 12px;
 	transition: color var(--fast) var(--transition), background-color var(--fast) var(--transition);

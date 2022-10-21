@@ -147,7 +147,7 @@ export default defineComponent({
 			left: 0;
 			color: var(--foreground-subdued);
 			font-weight: 600;
-			font-size: 12px;
+			font-size: var(--font-size-smaller);
 			white-space: nowrap;
 			opacity: 1;
 			transition: opacity var(--fast) var(--transition);
@@ -183,7 +183,7 @@ export default defineComponent({
 
 	&.small {
 		top: 0;
-		height: 60px;
+		height: var(--height-largest);
 	}
 
 	&.small .title-container .headline {

@@ -35,8 +35,8 @@ export default defineComponent({
 	width: 100%;
 	height: 100%;
 	font-weight: 800;
-	font-size: 42px;
-	line-height: 52px;
+	font-size: var(--font-size-massive);
+	line-height: var(--height-large);
 }
 
 .label.has-header {

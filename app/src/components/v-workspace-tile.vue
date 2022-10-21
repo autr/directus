@@ -430,7 +430,7 @@ function useDragDrop() {
 .name {
 	color: var(--foreground-normal-alt);
 	font-weight: 600;
-	font-size: 16px;
+	font-size: var(--font-size-medium);
 	font-family: var(--family-sans-serif);
 	font-style: normal;
 }

@@ -80,7 +80,7 @@ export default defineComponent({
 	align-items: center;
 	justify-content: center;
 	width: 60px;
-	height: 60px;
+	height: var(--height-largest);
 	padding: 12px;
 	background-color: var(--brand);
 

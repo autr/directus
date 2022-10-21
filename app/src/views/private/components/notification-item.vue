@@ -84,7 +84,7 @@ export default defineComponent({
 	align-items: center;
 	justify-content: flex-start;
 	width: 100%;
-	min-height: 44px;
+	min-height: var(--height-medium);
 	margin-top: 4px;
 	padding: 12px;
 	color: var(--white);
@@ -97,7 +97,7 @@ export default defineComponent({
 		align-items: center;
 		justify-content: center;
 		width: 44px;
-		height: 44px;
+		height: var(--height-medium);
 		margin-right: 12px;
 		background-color: rgb(255 255 255 / 0.25);
 		border-radius: 50%;
@@ -133,7 +133,7 @@ export default defineComponent({
 	&.dense {
 		width: max-content;
 		max-width: 100%;
-		min-height: 44px;
+		min-height: var(--height-medium);
 
 		.icon {
 			width: auto;

@@ -100,7 +100,7 @@ function toggle(item: Record<string, any>) {
 	padding: 12px;
 	background-color: var(--background-normal);
 	border: 2px solid var(--background-normal);
-	border-radius: 6px;
+	border-radius: var(--border-radius);
 	backface-visibility: hidden;
 	cursor: pointer;
 	transition-timing-function: var(--transition);
@@ -120,7 +120,7 @@ function toggle(item: Record<string, any>) {
 		align-items: center;
 		justify-content: center;
 		width: 44px;
-		height: 44px;
+		height: var(--height-medium);
 		margin-right: 12px;
 		background-color: var(--background-page);
 		border-radius: 50%;

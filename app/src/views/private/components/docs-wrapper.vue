@@ -54,7 +54,7 @@ export default defineComponent({
 	max-width: 740px;
 	color: var(--foreground-normal-alt);
 	font-weight: 400;
-	font-size: 16px;
+	font-size: var(--font-size-medium);
 	line-height: 27px;
 }
 
@@ -101,35 +101,35 @@ export default defineComponent({
 .md :deep(h1) {
 	margin-bottom: 40px;
 	font-size: 35px;
-	line-height: 44px;
+	line-height: var(--height-medium);
 }
 
 .md :deep(h2) {
 	margin-top: 60px;
 	margin-bottom: 20px;
 	padding-bottom: 4px;
-	font-size: 24px;
+	font-size: var(--font-size-larger);
 	line-height: 34px;
 	border-bottom: 2px solid var(--border-subdued);
 }
 
 .md :deep(h3) {
 	margin-bottom: 0px;
-	font-size: 19px;
+	font-size: var(--font-size-large);
 	line-height: 24px;
 }
 
 .md :deep(h4) {
-	font-size: 16px;
+	font-size: var(--font-size-medium);
 }
 
 .md :deep(h5) {
-	font-size: 14px;
+	font-size: var(--font-size-small);
 }
 
 .md :deep(h6) {
 	color: var(--foreground-normal);
-	font-size: 14px;
+	font-size: var(--font-size-small);
 }
 
 .md :deep(pre) {
@@ -219,7 +219,7 @@ export default defineComponent({
 .md :deep(video) {
 	width: 100%;
 	margin: 20px 0;
-	border-radius: 6px;
+	border-radius: var(--border-radius);
 }
 
 .md :deep(table img) {
@@ -388,7 +388,7 @@ export default defineComponent({
 
 .md :deep(.heading-link) {
 	color: var(--foreground-subdued);
-	font-size: 16px;
+	font-size: var(--font-size-medium);
 }
 
 .md :deep(.heading-link:hover) {
@@ -479,7 +479,7 @@ export default defineComponent({
 	background-color: var(--primary);
 	border-radius: 50%;
 	width: 28px;
-	height: 28px;
+	height: var(--height-smallest);
 	vertical-align: middle;
 	display: inline-flex;
 	align-items: center;

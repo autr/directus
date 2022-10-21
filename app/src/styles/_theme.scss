@@ -1,0 +1,150 @@
+// Default / Light Mode
+@mixin light {
+
+	color-scheme: light;
+
+	$l0: #fff;
+	$l1: #f7fafc;
+	$l2: #f7f9fd;
+	$l3: #fafcfd;
+	$l4: #f0f4f9;
+	$l5: #e4eaf1;
+	$l6: #d3dae4;
+
+	$ld: #a2b5cd;
+
+	$d0: #4f5464;
+	$d1: #8196b1;
+	$d2: #263238; 
+	$d3: rgba(38, 50, 56, 0.8);
+	$d4: #172940;
+	$d5: #18222f;
+
+	--border-normal: #{$l6};
+	--border-normal-alt: #{$ld};
+	--border-subdued: #{$l4};
+
+	--foreground-normal: #{$d0}; // Less contrast for improved hierarchy
+	--foreground-normal-alt: #{$d4}; // More contrast for titles and labels
+	--foreground-subdued: #{$ld};
+	--foreground-inverted: #{$l0};
+
+	--background-normal: #{$l4};
+	--background-normal-alt: #{$l5};
+	--background-subdued: #{$l1};
+	--background-highlight: #{$l2};
+	--background-page: #{$l0};
+	--background-input: #{$l0};
+	--background-page-rgb: 255, 255, 255;
+	--background-inverted: #{$d2};
+
+	--card-face-color: #{$l3};
+	--card-shadow-color: 23, 41, 64;
+	--card-shadow: 0px 0px 6px 0px rgba(var(--card-shadow-color), 0.2);
+	--overlay-color: #{$d3};
+
+	--module-background: #{$d5};
+	--module-background-alt: var(--background-normal);
+	--module-icon: #{$d1};
+	--module-icon-alt: var(--foreground-normal-alt);
+
+	// Mixing colors
+	
+	$light-theme-tint: $l0;
+	$light-theme-shade: #2e3c43;
+
+	// Generate color variations
+
+	@include generate-colors($color-mapping-light, $light-theme-tint, $light-theme-shade);
+
+	--purple-alt: var(--purple-10);
+	--blue-alt: var(--blue-10);
+	--green-alt: var(--green-10);
+	--yellow-alt: var(--yellow-10);
+	--orange-alt: var(--orange-10);
+	--red-alt: var(--red-10);
+	--primary-alt: var(--purple-10);
+	--secondary-alt: var(--pink-10);
+	--success-alt: var(--green-10);
+	--warning-alt: var(--yellow-10);
+	--danger-alt: var(--red-10);
+
+	.alt-colors {
+		--background-subdued: var(--background-page);
+	}
+}
+
+
+// Dark Mode
+@mixin dark {
+
+
+	color-scheme: dark;
+
+	$l0: #fff;
+	$l1: #f0f6fc;
+	$l2: #c9d1d9;
+	$l3: #484f58;
+
+	$d0: #30363d;
+	$d1: #21262e;
+	$d2: #1d1d21;
+	$d3: #161b22;
+	$d4: #0d1117;
+	$d5: rgba(0, 0, 0, 0.9);
+
+	$ld: #666672;
+
+	--border-normal: #{$d0};
+	--border-normal-alt: #{$l3};
+	--border-subdued: #{$d1};
+
+	--foreground-normal: #{$l2};
+	--foreground-normal-alt: #{$l1};
+	--foreground-subdued: #{$ld}:;
+	--foreground-inverted: #{$d4};
+
+	--background-normal: #{$d1};
+	--background-normal-alt: #{$d0};
+	--background-subdued: #{$d3};
+	--background-highlight: #{$d2};
+	--background-page: #{$d4};
+	--background-input: #{$d4};
+	--background-page-rgb: 13, 17, 23;
+	--background-inverted: #{$l0};
+
+	--card-face-color: var(--background-subdued);
+	--card-shadow-color: 0, 0, 0;
+	--card-shadow: 0px 0px 6px 0px rgba(var(--card-shadow-color), 0.2);
+	--overlay-color: #{$d5};
+
+	--module-background: var(--background-page);
+	--module-background-alt: var(--background-normal);
+	--module-icon: var(--foreground-subdued);
+	--module-icon-alt: var(--foreground-normal-alt);
+
+	// Mixing colors
+	
+	$dark-theme-tint: $l0;
+	$dark-theme-shade: #16151a;
+
+	// Generate color variations
+
+	@include generate-colors($color-mapping-dark, $dark-theme-shade, $dark-theme-tint);
+
+	--purple-alt: var(--purple-10);
+	--blue-alt: var(--blue-10);
+	--green-alt: var(--green-10);
+	--yellow-alt: var(--yellow-10);
+	--orange-alt: var(--orange-10);
+	--red-alt: var(--red-10);
+	--primary-alt: var(--primary-10);
+	--secondary-alt: var(--secondary-10);
+	--success-alt: var(--green-10);
+	--warning-alt: var(--yellow-10);
+	--danger-alt: var(--red-10);
+
+	.alt-colors {
+		--background-subdued: var(--background-page);
+	}
+}

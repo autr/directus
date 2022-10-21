@@ -513,7 +513,7 @@ export default defineComponent({
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		height: 36px;
+		height: var(--height-small);
 		padding: 10px;
 		color: var(--foreground-subdued);
 		background-color: var(--background-page);

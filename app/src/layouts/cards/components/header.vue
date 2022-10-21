@@ -147,7 +147,7 @@ export default defineComponent({
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	height: 52px;
+	height: var(--height-large);
 	margin-bottom: 36px;
 	padding: 0 8px;
 	background-color: var(--background-page);

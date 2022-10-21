@@ -373,7 +373,7 @@ function isExistingField(node: Record<string, any>): boolean {
 			padding: 2px 6px;
 			color: var(--primary);
 			background-color: var(--primary-alt);
-			border-radius: 6px;
+			border-radius: var(--border-radius);
 			cursor: pointer;
 			transition: var(--fast) var(--transition);
 			transition-property: color, background-color;
@@ -425,7 +425,7 @@ function isExistingField(node: Record<string, any>): boolean {
 			width: calc(100% + 8px);
 			height: 100%;
 			background-color: var(--background-normal);
-			border-radius: 6px;
+			border-radius: var(--border-radius);
 			opacity: 0;
 			transition: opacity var(--fast) var(--transition);
 			content: '';

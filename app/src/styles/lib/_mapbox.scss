@@ -12,7 +12,7 @@
 
 	button {
 		width: 36px;
-		height: 36px;
+		height: var(--height-small);
 		background: var(--background-input) !important;
 		border: none !important;
 		transition: background-color var(--fast) var(--transition);
@@ -42,7 +42,7 @@
 	button::after {
 		display: flex;
 		justify-content: center;
-		font-size: 24px;
+		font-size: var(--font-size-larger);
 		font-family: 'Material Icons Outline', sans-serif;
 		font-style: normal;
 		font-variant: normal;
@@ -103,7 +103,7 @@
 
 	.maplibregl-ctrl-attrib-inner,
 	.mapboxgl-ctrl-attrib-inner {
-		font-size: 12px;
+		font-size: var(--font-size-smaller);
 		line-height: 20px;
 	}
 }

@@ -248,6 +248,6 @@ function useComputedValues() {
 }
 
 .label-spacer {
-	height: 28px;
+	height: var(--height-smallest);
 }
 </style>

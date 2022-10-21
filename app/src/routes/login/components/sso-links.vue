@@ -114,7 +114,7 @@ export default defineComponent({
 		display: flex;
 		align-items: center;
 		padding: 0 16px 0 20px;
-		font-size: 16px;
+		font-size: var(--font-size-medium);
 	}
 
 	&:hover {

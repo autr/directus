@@ -95,7 +95,7 @@ body {
 .v-chip {
 	display: inline-flex;
 	align-items: center;
-	height: 36px;
+	height: var(--height-small);
 	padding: 0 8px;
 	color: var(--v-chip-color);
 	font-weight: var(--weight-normal);
@@ -130,21 +130,21 @@ body {
 	&.x-small {
 		height: 20px;
 		padding: 0 4px;
-		font-size: 12px;
+		font-size: var(--font-size-smaller);
 		border-radius: 10px;
 	}
 
 	&.small {
 		height: 24px;
 		padding: 0 4px;
-		font-size: 14px;
+		font-size: var(--font-size-small);
 		border-radius: 12px;
 	}
 
 	&.large {
-		height: 44px;
+		height: var(--height-medium);
 		padding: 0 20px;
-		font-size: 16px;
+		font-size: var(--font-size-medium);
 		border-radius: 22px;
 	}
 

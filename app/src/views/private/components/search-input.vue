@@ -184,7 +184,7 @@ export default defineComponent({
 	align-items: center;
 	width: 72px;
 	max-width: 100%;
-	height: 44px;
+	height: var(--height-medium);
 	overflow: hidden;
 	border: 2px solid var(--border-normal);
 	border-radius: calc(44px / 2);

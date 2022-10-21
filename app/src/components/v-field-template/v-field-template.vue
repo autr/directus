@@ -294,7 +294,7 @@ function setContent() {
 	height: 100%;
 	padding: var(--input-padding) 0;
 	overflow: hidden;
-	font-size: 14px;
+	font-size: var(--font-size-small);
 	font-family: var(--family-monospace);
 	white-space: nowrap;
 }

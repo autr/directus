@@ -75,8 +75,6 @@ export default defineComponent({
 
 <style scoped lang="scss">
 .shared {
-	--border-radius: 6px;
-	--input-height: 60px;
 	--input-padding: 16px;
 
 	width: 100%;
@@ -107,7 +105,7 @@ header {
 	align-items: center;
 	width: max-content;
 	max-width: 100%;
-	height: 60px;
+	height: var(--height-largest);
 	margin-top: 2px;
 
 	.title {
@@ -116,7 +114,7 @@ header {
 		h1 {
 			color: var(--foreground-normal);
 			font-weight: 700;
-			font-size: 24px;
+			font-size: var(--font-size-larger);
 			line-height: 24px;
 		}
 
@@ -132,7 +130,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	width: 60px;
-	height: 60px;
+	height: var(--height-largest);
 	background-color: var(--brand);
 	border-radius: var(--border-radius);
 

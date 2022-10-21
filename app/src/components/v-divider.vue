@@ -70,7 +70,7 @@ body {
 
 	&.large .type-text {
 		font-weight: 700;
-		font-size: 24px;
+		font-size: var(--font-size-larger);
 	}
 
 	&.inlineTitle {
@@ -80,7 +80,7 @@ body {
 			order: 0;
 			margin-right: 8px;
 			font-weight: 600;
-			font-size: 14px;
+			font-size: var(--font-size-small);
 		}
 
 		hr {

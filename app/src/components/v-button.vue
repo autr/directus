@@ -186,10 +186,17 @@ async function onClick(event: MouseEvent) {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 :global(body) {
 	--v-button-width: auto;
 	--v-button-height: 44px;
+	--v-button-font-size: 16px;
+	--v-button-font-weight: 600;
+	--v-button-line-height: 22px;
+	--v-button-min-width: 140px;
+}
+
+.v-button {
 	--v-button-color: var(--foreground-inverted);
 	--v-button-color-hover: var(--foreground-inverted);
 	--v-button-color-active: var(--foreground-inverted);
@@ -198,10 +205,6 @@ async function onClick(event: MouseEvent) {
 	--v-button-background-color-hover: var(--primary-125);
 	--v-button-background-color-active: var(--primary);
 	--v-button-background-color-disabled: var(--background-normal);
-	--v-button-font-size: 16px;
-	--v-button-font-weight: 600;
-	--v-button-line-height: 22px;
-	--v-button-min-width: 140px;
 }
 
 .info {
@@ -265,16 +268,6 @@ async function onClick(event: MouseEvent) {
 	--v-button-color-hover: var(--danger);
 }
 
-.v-button {
-	display: inline-flex;
-	align-items: center;
-}
-
-.v-button.full-width {
-	display: flex;
-	min-width: 100%;
-}
-
 .button {
 	position: relative;
 	display: flex;
@@ -303,6 +296,27 @@ async function onClick(event: MouseEvent) {
 	border-color: var(--v-button-background-color-hover);
 }
 
+.button:focus {
+	outline: 0;
+}
+
+.button:disabled {
+	color: var(--v-button-color-disabled);
+	background-color: var(--v-button-background-color-disabled);
+	border: var(--border-width) solid var(--v-button-background-color-disabled);
+	cursor: not-allowed;
+}
+
+.v-button {
+	display: inline-flex;
+	align-items: center;
+}
+
+.v-button.full-width {
+	display: flex;
+	min-width: 100%;
+}
+
 .align-left {
 	justify-content: flex-start;
 }
@@ -313,17 +327,6 @@ async function onClick(event: MouseEvent) {
 
 .align-right {
 	justify-content: flex-end;
-}
-
-.button:focus {
-	outline: 0;
-}
-
-.button:disabled {
-	color: var(--v-button-color-disabled);
-	background-color: var(--v-button-background-color-disabled);
-	border: var(--border-width) solid var(--v-button-background-color-disabled);
-	cursor: not-allowed;
 }
 
 .rounded,

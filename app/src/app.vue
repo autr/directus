@@ -42,10 +42,73 @@ export default defineComponent({
 
 		const { hydrating } = toRefs(appStore);
 
+		const hex2HSL = (hex) => {
+			let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+			let r = parseInt(result[1], 16);
+			let g = parseInt(result[2], 16);
+			let b = parseInt(result[3], 16);
+			r /= 255;
+			g /= 255;
+			b /= 255;
+			let max = Math.max(r, g, b),
+				min = Math.min(r, g, b);
+			let h,
+				s,
+				l = (max + min) / 2;
+			if (max == min) {
+				h = s = 0; // achromatic
+			} else {
+				let d = max - min;
+				s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+				switch (max) {
+					case r:
+						h = (g - b) / d + (g < b ? 6 : 0);
+						break;
+					case g:
+						h = (b - r) / d + 2;
+						break;
+					case b:
+						h = (r - g) / d + 4;
+						break;
+				}
+				h /= 6;
+			}
+			let HSL = new Object();
+			HSL['h'] = h;
+			HSL['s'] = s;
+			HSL['l'] = l;
+			return HSL;
+		};
+
 		const brandStyle = computed(() => {
-			return {
+			const col = hex2HSL(serverStore.info?.project?.project_color || '#8866ff');
+			const adjust = (h, s, l) => `hsl(${col.h * 360 + h},${col.s * 100 + s}%,${60 + l / 2.5}%)`;
+
+			const colors = {
+				'--primary-10': adjust(0, 0, 90),
+				'--primary-25': adjust(0, 0, 75),
+				'--primary-50': adjust(0, 0, 50),
+				'--primary-75': adjust(0, 0, 25),
+				'--primary-90': adjust(0, 0, 10),
+				'--primary-100': adjust(0, 0, 0),
+				'--primary-110': adjust(0, 0, -10),
+				'--primary-125': adjust(0, -5, -25),
+				'--primary-150': adjust(0, -10, -50),
+				'--primary-175': adjust(0, -15, -75),
+				'--primary-190': adjust(0, -20, -90),
+				'--primary': adjust(0, 0, 0),
 				'--brand': serverStore.info?.project?.project_color || 'var(--primary)',
 			} as StyleValue;
+
+			/*
+				// debug colour output into console:
+
+				Object.keys(colors).forEach( key => {
+					return console.log(`%c${key}: ${colors[key]}`, `background-color:${colors[key]}`)
+				})
+			*/
+
+			return colors;
 		});
 
 		onMounted(() => startIdleTracking());

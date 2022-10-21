@@ -274,7 +274,7 @@ function toggleManualSort() {
 		height: 50px; /* +2px for bottom border */
 		padding: 0 12px;
 		font-weight: 500;
-		font-size: 14px;
+		font-size: var(--font-size-small);
 		background-color: var(--v-table-background-color);
 		border-bottom: var(--border-width) solid var(--border-subdued);
 

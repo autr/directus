@@ -1,5 +1,7 @@
 @mixin generate-colors($color-map, $mix-color-low, $mix-color-high) {
 	// Loop through palette in $color-map list
+	@debug "generating colours:";
+	@debug "-------------------";
 	@each $identifier, $color in $color-map {
 		// Loop through pre-defined steps in $step-mapping list
 		@each $suffix, $step in $step-mapping {
@@ -17,6 +19,11 @@
 			}
 			// This is the CSS variable that will be output
 			--#{$identifier}#{$resolved-suffix}: #{mix($mixing-color, $color, 100 - abs($step))};
+			// @debug "#{$identifier}#{$resolved-suffix} #{mix($mixing-color, $color, 100 - abs($step))}";
+
+			.#{$identifier} {
+				--primary#{$resolved-suffix}: #{mix($mixing-color, $color, 100 - abs($step))};
+			}
 		}
 	}
 }

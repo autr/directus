@@ -52,32 +52,32 @@ h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
 	margin-top: 0.5em;
 }
 h1 {
-	font-size: 36px;
+	font-size: var(--font-size-largest);
 	line-height: 46px;
 	margin-top: 1em;
 }
 h2 {
-	font-size: 24px;
+	font-size: var(--font-size-larger);
 	line-height: 34px;
 	margin-top: 1.25em;
 }
 h3 {
-	font-size: 19px;
+	font-size: var(--font-size-large);
 	line-height: 29px;
 	margin-top: 1.25em;
 }
 h4 {
-	font-size: 16px;
+	font-size: var(--font-size-medium);
 	line-height: 26px;
 	margin-top: 1.5em;
 }
 h5 {
-	font-size: 14px;
+	font-size: var(--font-size-small);
 	line-height: 24px;
 	margin-top: 2em;
 }
 h6 {
-	font-size: 12px;
+	font-size: var(--font-size-smaller);
 	line-height: 22px;
 	margin-top: 2em;
 }

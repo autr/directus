@@ -478,7 +478,7 @@ textarea {
 	margin-bottom: 0;
 	color: var(--foreground-normal-alt);
 	font-weight: 700;
-	font-size: 36px;
+	font-size: var(--font-size-largest);
 	font-family: v-bind(previewFamily), serif;
 	line-height: 46px;
 }
@@ -488,7 +488,7 @@ textarea {
 	margin-bottom: 0;
 	color: var(--foreground-normal-alt);
 	font-weight: 700;
-	font-size: 24px;
+	font-size: var(--font-size-larger);
 	font-family: v-bind(previewFamily), serif;
 	line-height: 34px;
 }
@@ -498,7 +498,7 @@ textarea {
 	margin-bottom: 0;
 	color: var(--foreground-normal-alt);
 	font-weight: 700;
-	font-size: 19px;
+	font-size: var(--font-size-large);
 	font-family: v-bind(previewFamily), serif;
 	line-height: 29px;
 }
@@ -508,7 +508,7 @@ textarea {
 	margin-bottom: 0;
 	color: var(--foreground-normal-alt);
 	font-weight: 700;
-	font-size: 16px;
+	font-size: var(--font-size-medium);
 	font-family: v-bind(previewFamily), serif;
 	line-height: 26px;
 }
@@ -518,7 +518,7 @@ textarea {
 	margin-bottom: 0;
 	color: var(--foreground-normal-alt);
 	font-weight: 700;
-	font-size: 14px;
+	font-size: var(--font-size-small);
 	font-family: v-bind(previewFamily), serif;
 	line-height: 24px;
 }
@@ -528,7 +528,7 @@ textarea {
 	margin-bottom: 0;
 	color: var(--foreground-normal-alt);
 	font-weight: 700;
-	font-size: 12px;
+	font-size: var(--font-size-smaller);
 	font-family: v-bind(previewFamily), serif;
 	line-height: 22px;
 }

@@ -274,7 +274,7 @@ export default defineComponent({
 	padding: 6px 10px;
 	color: var(--foreground-normal-alt);
 	font-weight: 500;
-	font-size: 14px;
+	font-size: var(--font-size-small);
 	font-family: var(--family-sans-serif);
 	background-color: var(--background-page);
 	border-radius: var(--border-radius);
@@ -291,7 +291,7 @@ export default defineComponent({
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 36px;
+	height: var(--height-small);
 	padding: 10px;
 	color: var(--foreground-subdued);
 	background-color: var(--background-page);
@@ -331,7 +331,7 @@ export default defineComponent({
 	background-color: transparent !important;
 
 	.pagination {
-		--v-button-height: 28px;
+		--v-button-height: var(--height-smallest);
 
 		display: inline-block;
 		margin-right: 10px;

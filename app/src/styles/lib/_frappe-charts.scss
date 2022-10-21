@@ -4,7 +4,7 @@
 
 	.axis,
 	.chart-label {
-		font-size: 10px;
+		font-size: var(--font-size-smallest);
 		fill: var(--foreground-normal);
 
 		line {
@@ -66,7 +66,7 @@
 	z-index: 99999;
 	padding: 10px;
 	color: var(--border-normal);
-	font-size: 12px;
+	font-size: var(--font-size-smaller);
 	text-align: center;
 	background: rgba(0, 0, 0, 0.8);
 	border-radius: 3px;

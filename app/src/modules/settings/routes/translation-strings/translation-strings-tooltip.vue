@@ -109,7 +109,7 @@ const displayedTranslation = computed(() => {
 	align-items: center;
 	justify-content: space-between;
 	color: var(--foreground-subdued);
-	font-size: 12px;
+	font-size: var(--font-size-smaller);
 
 	.lang {
 		font-weight: 600;

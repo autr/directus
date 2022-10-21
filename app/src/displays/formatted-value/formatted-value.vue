@@ -219,10 +219,10 @@ export default defineComponent({
 
 	&.has-background,
 	&.has-border {
-		height: 28px;
+		height: var(--height-smallest);
 		padding: 0 10px;
-		font-size: 14px;
-		line-height: 28px;
+		font-size: var(--font-size-small);
+		line-height: var(--height-smallest);
 		border-radius: 24px;
 	}
 

@@ -74,7 +74,7 @@ withDefaults(defineProps<Props>(), {
 		padding: 0 5px;
 		color: var(--v-badge-color);
 		font-weight: 800;
-		font-size: 9px;
+		font-size: var(--font-size-tiny);
 		background-color: var(--v-badge-background-color);
 		border-radius: calc(var(--v-badge-size) / 2);
 

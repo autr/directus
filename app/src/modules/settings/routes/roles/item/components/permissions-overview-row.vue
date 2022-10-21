@@ -114,7 +114,7 @@ export default defineComponent({
 		.actions {
 			margin-left: 8px;
 			color: var(--foreground-subdued);
-			font-size: 12px;
+			font-size: var(--font-size-smaller);
 			opacity: 0;
 			transition: opacity var(--fast) var(--transition);
 

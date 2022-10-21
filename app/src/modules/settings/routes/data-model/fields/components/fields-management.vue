@@ -211,7 +211,7 @@ export default defineComponent({
 }
 
 .add-field {
-	--v-button-font-size: 14px;
+	--v-button-font-size: var(--font-size);
 	--v-button-background-color: var(--primary);
 	--v-button-background-color-hover: var(--primary-125);
 

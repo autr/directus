@@ -91,7 +91,7 @@ body {
 		flex-shrink: 0;
 		justify-content: space-between;
 		width: 100%;
-		height: 60px;
+		height: var(--height-largest);
 		color: var(--sidebar-detail-color);
 		background-color: var(--background-normal-alt);
 
@@ -124,7 +124,7 @@ body {
 		align-items: center;
 		justify-content: center;
 		width: 60px;
-		height: 60px;
+		height: var(--height-largest);
 		color: var(--foreground-normal);
 		cursor: pointer;
 		transition: opacity var(--fast) var(--transition), color var(--fast) var(--transition);

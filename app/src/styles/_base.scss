@@ -1,4 +1,5 @@
 @import './mixins/form-grid.scss';
+@import './_variables.scss';
 
 *:not(svg *) {
 	box-sizing: border-box;
@@ -13,14 +14,14 @@
 }
 
 html {
-	font-size: 14px;
+	font-size: var(--font-size);
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
 	color: var(--foreground-normal);
-	font-weight: 500;
-	font-size: 14px;
+	font-weight: var(--weight-normal);
+	font-size: var(--font-size);
 	font-family: var(--family-sans-serif);
 	font-style: normal;
 	line-height: 22px;
@@ -84,10 +85,13 @@ label {
 	display: block;
 }
 
+
 fieldset {
 	padding: 10px 0 20px;
 	border: 0;
 
+	/* Is this used? */
+	
 	&.centered {
 		border-top: 1px solid var(--blue-grey-200);
 
@@ -104,7 +108,7 @@ a {
 }
 
 strong {
-	font-weight: 600;
+	font-weight: var(--weight-strong);
 }
 
 code {
